@@ -1,0 +1,17 @@
+# maven
+**/target
+
+# git
+.git
+.githooks
+.gitignore
+
+# docker
+.dockerignore
+docker-compose.yaml
+Dockerfile
+
+# eclipse
+.settings
+.classpath
+.project

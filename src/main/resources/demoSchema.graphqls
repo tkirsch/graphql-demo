@@ -1,0 +1,31 @@
+schema {
+  query: QueryType
+  mutation: MutationType
+}
+
+type QueryType {
+  me: Person
+  person(name: String!): Person
+  persons: [Person]
+}
+
+type MutationType {
+  create(person: CreatePersonInput!): Person
+  update(id: ID!, person: UpdatePersonInput!): Person
+}
+
+type Person {
+  id: ID
+  name: String
+  age: Int
+}
+
+input CreatePersonInput {
+  name: String!
+  age: Int
+}
+
+input UpdatePersonInput {
+  name: String
+  age: Int
+}
