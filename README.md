@@ -1,3 +1,10 @@
+# Vert.x + GraphQL Demo
+
+- clone repo
+- run `docker-compose up --build`
+- browser to http://localhost:8181/
+
+**Examples**
 
 ```
 query q1 {
